@@ -1,0 +1,54 @@
+html {
+	color:#000;
+	font-family:arial,verdana;
+	font-size: 10px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+	
+body {
+	background:#e89f2c url('C:\Users\Public\Documents\SHITES\vostumadre\Pueba\ui\Images\background.png') no-repeat center bottom;
+	display: block;
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 5px;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	border-top: 1px solid #333;
+	background-position: center;
+}
+#vos {
+	top: -120px;
+	left: 40%;
+	margin-left: -560px;
+	position: fixed;
+	display: none;
+}
+#tu {
+	top: -120px;
+	left: 40%;
+	margin-left: -720px;
+	position: fixed;
+	display: none;
+}
+#madre {
+	top: -120px;
+	left: 40%;
+	margin-left: -805px;
+	position: fixed;
+	display: none;
+}
+#vostumadre {
+	top: -220px;
+	left: 45%;
+	margin-left: -720px;
+	position: fixed;
+	display: block;
+	text-align: center;
+}
