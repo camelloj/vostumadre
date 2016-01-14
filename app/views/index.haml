@@ -1,0 +1,81 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %link{:href => "../../favicon.ico", :rel => "icon"}/
+    %title Vos Tu Madre!!!
+    / Bootstrap core CSS
+    %link{:href => "/css/bootstrap.min.css", :rel => "stylesheet"}/
+    / Custom styles for this template
+    %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}/
+    / Just for debugging purposes. Don't actually copy these 2 lines!
+    /[if lt IE 9] <script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+    %script{:src => "/js/ie-emulation-modes-warning.js"}
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  %body
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              %h3.masthead-brand Vos Tu Madre!!!
+              %ul.nav.masthead-nav
+                %li.active
+                  %a{:href => "#"} f
+                %li
+                  %a{:href => "#"} t
+                %li
+                  %a{:href => "#"} p
+          .inner.cover
+            :javascript
+              <!--
+               var imlocation = "img/";
+               var currentdate = 0;
+               var image_number = 0;
+               function ImageArray (n) {
+                 this.length = n;
+                 for (var i =1; i <= n; i++) {
+                   this[i] = ' '
+                 }
+               }
+               image = new ImageArray(2)
+               image[0] = 'vtm.jpg'
+               image[1] = 'vtm2.jpg'
+               image[2] = 'vtm3.jpg'
+               var rand = 60/image.length
+               function randomimage() {
+                    currentdate = new Date()
+                    image_number = currentdate.getSeconds()
+                    image_number = Math.floor(image_number/rand)
+                    return(image[image_number])
+               }
+               document.write("<img src='" + imlocation + randomimage()+ "'>");
+              //-->
+          .mastfoot
+            .inner
+              %p
+                Para cuando amerita un 
+                = succeed " " do
+                  %a{:href => "https://twitter.com/search?f=realtime&q=%23vtm&src=typd"} #vtm
+                pedilo a
+                = succeed "," do
+                  %a{:href => "https://twitter.com/Ronald_MacKay"} @Ronald_MacKay
+                elaborado por
+                = succeed "." do
+                  %a{:href => "https://twitter.com/camelloj"} @camelloj
+    /
+      Bootstrap core JavaScript
+      \==================================================
+    / Placed at the end of the document so the pages load faster
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+    %script{:src => "/js/bootstrap.min.js"}
+    %script{:src => "/js/docs.min.js"}
+    / IE10 viewport hack for Surface/desktop Windows 8 bug
+    %script{:src => "/js/ie10-viewport-bug-workaround.js"}
